@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SERVICE-{#####}",
+ "creation": "2024-02-02 00:11:01.513235",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "\u57fa\u672c\u8cc7\u6599_section",
+  "service_status",
+  "service_type",
+  "service_name",
+  "service_summary",
+  "column_break_9x8gg",
+  "service_op",
+  "service_discount",
+  "service_sp",
+  "service_bs",
+  "service_st",
+  "\u7522\u54c1\u4f7f\u7528\u8868_section",
+  "product_usage_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\u767c\u552e\u4e2d\n\u505c\u552e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "makeup\nfac\n\u5584\u7f8e\u5f97\nPruvit\nEnagic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_summary",
+   "fieldtype": "Small Text",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "service_op",
+   "fieldtype": "Currency",
+   "label": "Original Price"
+  },
+  {
+   "fieldname": "service_discount",
+   "fieldtype": "Percent",
+   "label": "Discount\uff08%\uff09"
+  },
+  {
+   "fieldname": "service_sp",
+   "fieldtype": "Currency",
+   "label": "Selling Price"
+  },
+  {
+   "fieldname": "service_bs",
+   "fieldtype": "Currency",
+   "label": "Beautician Salary"
+  },
+  {
+   "fieldname": "service_st",
+   "fieldtype": "Data",
+   "label": "Service Time(mins)"
+  },
+  {
+   "fieldname": "product_usage_table",
+   "fieldtype": "Table",
+   "label": "Product Usage Table",
+   "options": "Product Usage Table"
+  },
+  {
+   "fieldname": "\u57fa\u672c\u8cc7\u6599_section",
+   "fieldtype": "Section Break",
+   "label": "\u57fa\u672c\u8cc7\u6599"
+  },
+  {
+   "fieldname": "column_break_9x8gg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "\u7522\u54c1\u4f7f\u7528\u8868_section",
+   "fieldtype": "Section Break",
+   "label": "\u7522\u54c1\u4f7f\u7528\u8868"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-02 09:58:22.829465",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Service",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
