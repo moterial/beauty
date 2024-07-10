@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PACKAGE-{package_name}",
+ "creation": "2024-02-19 10:46:49.604226",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "package_name",
+  "service_included",
+  "product_included",
+  "ref_total",
+  "discount_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "label": "Package Name"
+  },
+  {
+   "fieldname": "service_included",
+   "fieldtype": "Table",
+   "label": "Service Included",
+   "options": "Service Items"
+  },
+  {
+   "fieldname": "product_included",
+   "fieldtype": "Table",
+   "label": "Product Included",
+   "options": "Product Usage Table"
+  },
+  {
+   "fieldname": "ref_total",
+   "fieldtype": "Currency",
+   "label": "Ref Total"
+  },
+  {
+   "fieldname": "discount_total",
+   "fieldtype": "Currency",
+   "label": "Discount Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-19 10:46:49.604226",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Beauty Package",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

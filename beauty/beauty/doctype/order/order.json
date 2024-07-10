@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SAL-{YYYY}-{#####}",
+ "creation": "2024-02-16 11:27:53.398631",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "check_payment",
+  "basic_details_section",
+  "customer",
+  "date",
+  "product_and_service_section",
+  "packages_item",
+  "packages_item_coupon",
+  "product_items",
+  "service_items",
+  "column_break_nfdtf",
+  "use_package",
+  "total",
+  "column_break_zooxq",
+  "package_usage"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Beauty Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_items",
+   "fieldtype": "Table",
+   "label": "Product Items",
+   "options": "Product Usage Table"
+  },
+  {
+   "fieldname": "service_items",
+   "fieldtype": "Table",
+   "label": "Service Items",
+   "options": "Service Items"
+  },
+  {
+   "fieldname": "product_and_service_section",
+   "fieldtype": "Section Break",
+   "label": "Product and Service"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "column_break_nfdtf",
+   "fieldtype": "Section Break",
+   "label": "Price"
+  },
+  {
+   "fieldname": "column_break_zooxq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "packages_item",
+   "fieldtype": "Table",
+   "label": "Packages Item - Quantity",
+   "options": "Beauty Package Item"
+  },
+  {
+   "fieldname": "packages_item_coupon",
+   "fieldtype": "Table",
+   "label": "Packages Item - Coupon",
+   "options": "Beauty Package Coupon Item"
+  },
+  {
+   "fieldname": "package_usage",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Price Deduction(packages used)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "use_package",
+   "fieldtype": "Check",
+   "label": "Use package"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_payment",
+   "fieldtype": "Check",
+   "label": "Check Payment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-21 23:13:01.351256",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

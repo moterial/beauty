@@ -1,50 +1,52 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-02-02 09:46:07.303823",
+ "creation": "2024-05-06 01:08:03.687428",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "put_id",
-  "put_name",
-  "put_sp",
-  "put_q"
+  "id",
+  "name1",
+  "selling_price",
+  "quantity"
  ],
  "fields": [
   {
-   "fetch_from": "put_id.ps_name",
-   "fieldname": "put_name",
-   "fieldtype": "Data",
-   "label": "Name"
-  },
-  {
-   "fetch_from": "put_id.price",
-   "fieldname": "put_sp",
-   "fieldtype": "Currency",
-   "label": "Selling Price"
-  },
-  {
-   "fieldname": "put_q",
-   "fieldtype": "Data",
-   "label": "Quantity"
-  },
-  {
-   "fieldname": "put_id",
+   "fieldname": "id",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "ID",
-   "options": "Beauty Products",
-   "reqd": 1
+   "options": "Beauty Products"
+  },
+  {
+   "fetch_from": "id.ps_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fetch_from": "id.price",
+   "fieldname": "selling_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Selling Price"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-02-19 10:49:21.225866",
+ "modified": "2024-05-06 02:12:41.165071",
  "modified_by": "Administrator",
  "module": "Beauty",
- "name": "Product Usage Table",
+ "name": "Beauty Giveaway Product",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

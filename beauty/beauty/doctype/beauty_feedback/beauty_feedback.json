@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-04 03:10:04.559366",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event",
+  "service",
+  "name1",
+  "date",
+  "feedback",
+  "complaint",
+  "progress",
+  "satisfaction",
+  "related_employee"
+ ],
+ "fields": [
+  {
+   "fieldname": "event",
+   "fieldtype": "Select",
+   "label": "Event",
+   "options": "\u53cd\u994b\n\u6295\u8a34"
+  },
+  {
+   "depends_on": "eval:doc.event == \"\u53cd\u994b\";",
+   "fieldname": "feedback",
+   "fieldtype": "Text",
+   "label": "Feedback"
+  },
+  {
+   "depends_on": "eval:doc.event == \"\u6295\u8a34\";",
+   "fieldname": "complaint",
+   "fieldtype": "Text",
+   "label": "Complaint"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Select",
+   "label": "Progress",
+   "options": "\u672a\u8655\u7406\n\u8655\u7406\u4e2d\n\u5b8c\u6210\u8655\u7406"
+  },
+  {
+   "depends_on": "eval:doc.progress == \"\u5b8c\u6210\u8655\u7406\";",
+   "fieldname": "satisfaction",
+   "fieldtype": "Rating",
+   "label": "Satisfaction"
+  },
+  {
+   "fieldname": "related_employee",
+   "fieldtype": "Link",
+   "label": "Related Employee",
+   "options": "User"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Service"
+  },
+  {
+   "fetch_from": "service.service_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-17 01:47:52.776633",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Beauty Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

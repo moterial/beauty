@@ -33,10 +33,10 @@
   },
   {
    "fieldname": "service_type",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Type",
-   "options": "makeup\nfac\n\u5584\u7f8e\u5f97\nPruvit\nEnagic",
+   "options": "Beauty Service Type",
    "reqd": 1
   },
   {
@@ -64,7 +64,8 @@
   {
    "fieldname": "service_sp",
    "fieldtype": "Currency",
-   "label": "Selling Price"
+   "label": "Selling Price",
+   "reqd": 1
   },
   {
    "fieldname": "service_bs",
@@ -99,7 +100,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-02 09:58:22.829465",
+ "modified": "2024-05-17 14:34:55.139497",
  "modified_by": "Administrator",
  "module": "Beauty",
  "name": "Service",

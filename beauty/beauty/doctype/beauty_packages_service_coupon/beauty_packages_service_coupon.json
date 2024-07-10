@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-19 11:22:01.019151",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_id",
+  "service_name",
+  "service_sp",
+  "service_coupon"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ID",
+   "options": "Service",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "service_id.service_name",
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "service_id.service_sp",
+   "fieldname": "service_sp",
+   "fieldtype": "Currency",
+   "label": "Selling Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_coupon",
+   "fieldtype": "Currency",
+   "label": "Cash Allowance",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-02 12:44:24.440891",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Beauty Packages Service Coupon",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-18 18:20:46.596074",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hkd_to_rmb",
+  "rmb_to_hkd",
+  "hkd_to_usd",
+  "usd_to_hkd"
+ ],
+ "fields": [
+  {
+   "fieldname": "hkd_to_rmb",
+   "fieldtype": "Currency",
+   "label": "HKD to RMB"
+  },
+  {
+   "fieldname": "rmb_to_hkd",
+   "fieldtype": "Currency",
+   "label": "RMB to HKD"
+  },
+  {
+   "fieldname": "hkd_to_usd",
+   "fieldtype": "Currency",
+   "label": "HKD to USD"
+  },
+  {
+   "fieldname": "usd_to_hkd",
+   "fieldtype": "Currency",
+   "label": "USD to HKD"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-02-18 18:20:46.596074",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Beauty Currency Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

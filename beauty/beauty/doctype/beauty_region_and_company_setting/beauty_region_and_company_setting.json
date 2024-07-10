@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-17 23:34:03.404382",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "\u5730\u5340\u4fe1\u606f\u8a2d\u7f6e_section",
+  "region",
+  "district_hongkong",
+  "district_kowloon",
+  "districtnew_territories",
+  "\u904b\u71df\u516c\u53f8\u4fe1\u606f\u8a2d\u7f6e_section",
+  "company_name",
+  "column_break_1m1gk",
+  "company_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u5730\u5340\u4fe1\u606f\u8a2d\u7f6e_section",
+   "fieldtype": "Section Break",
+   "label": "\u5730\u5340\u4fe1\u606f\u8a2d\u7f6e"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "\nHongKong\nKowloon\nNew Territories"
+  },
+  {
+   "depends_on": "eval: doc.region === \"HongKong\" ;",
+   "fieldname": "district_hongkong",
+   "fieldtype": "Select",
+   "label": "District (HongKong)",
+   "options": "\nCentral and Western District\nEastern District\nSouthern District\nWan Chai District"
+  },
+  {
+   "depends_on": "eval: doc.region === \"Kowloon\" ;",
+   "fieldname": "district_kowloon",
+   "fieldtype": "Select",
+   "label": "District (Kowloon)",
+   "options": "\nYau Tsim Mong District\nSham Shui Po District\nKowloon City District\nWong Tai Sin District\nKwun Tong District\nKwai Tsing District"
+  },
+  {
+   "depends_on": "eval: doc.region === \"New Territories\" ;",
+   "fieldname": "districtnew_territories",
+   "fieldtype": "Select",
+   "label": "District(New Territories)",
+   "options": "\nIslands District\nKwai Tsing District\nNorth District\nSai Kung District\nSha Tin District\nTai Po District\nTsuen Wan District\nTuen Mun District\nYuen Long District"
+  },
+  {
+   "fieldname": "\u904b\u71df\u516c\u53f8\u4fe1\u606f\u8a2d\u7f6e_section",
+   "fieldtype": "Section Break",
+   "label": "\u904b\u71df\u516c\u53f8\u4fe1\u606f\u8a2d\u7f6e"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_1m1gk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Small Text",
+   "label": "Company Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-04-15 11:43:45.975763",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Beauty Region And Company Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

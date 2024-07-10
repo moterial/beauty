@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-19 14:59:58.824992",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ps_id",
+  "ps_name",
+  "ps_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "ps_id",
+   "fieldtype": "Data",
+   "label": "Product/Service ID"
+  },
+  {
+   "fieldname": "ps_name",
+   "fieldtype": "Data",
+   "label": "Product/Service Name"
+  },
+  {
+   "fieldname": "ps_quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-05 22:02:29.001127",
+ "modified_by": "Administrator",
+ "module": "Beauty",
+ "name": "Beauty Customer Sales Quantity",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
